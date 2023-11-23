@@ -1,64 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinesthi</title>
-    <!-- CSS -->
+    <!-- CSS BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- MI CSS -->
     <link rel="stylesheet" href="../css/estilo.css">
-    
+
 </head>
+
 <body>
 
-    <header class="encabezado">
-        
-          <img class="logo" src="../img/logocinesthi.png" alt="Logo Cinesthi">
-        
+    <nav class="navbar navbar-expand-lg encabezado">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="../img/logocinesthi.png" alt="Logo Cinesthi">
 
-        <nav>
-            <ul>
-                <li class="navItem"><a href="../index.html">Home</a></li>
-                <li class="navItem"><a href="sucursales.html">Sucursales</a></li>
-                <li class="navItem"><a href="candy.html">Candy</a></li>
-                <li class="navItem"><a href="festejatucumple.html">Festeja tu cumple</a></li>
-                <li class="navItem"><a href="contacto.html">Contacto</a></li>
-    
-            </ul>
-        </nav>
-
-
-    </header>  
-     
-     <main>
-         
-        <h1>Elegí el mejor combo para vos</h1>  
-
-         <h2>Seleccioná tu cine</h2>
-
-         <div class="contenedorCandy">
-             <img class="imgCandy" src="../img/combogrande.jpg" alt="combo grande">
-            <h3>Combo Grande</h3> 
-            <p>Balde de pochoclo + Vaso 24oz
-                $4000
-            </p>
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item navItem">
+                        <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item navItem">
+                        <a class="nav-link " href="sucursales.html">Sucursales</a>
+                    </li>
+                    <li class="nav-item navItem">
+                        <a class="nav-link " href="candy.html">Candy</a>
+                    </li>
+                    <li class="nav-item navItem">
+                        <a class="nav-link " href="festejatucumple.html">Feseja tu cumple</a>
+                    </li>
+                    <li class="nav-item navItem">
+                        <a class="nav-link " href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
+        </div>
+    </nav>
 
-         <div class="contenedorCandy">
-             <img class="imgCandy" src="../img/popgrande.jpg" alt="pop grande">
-             <h3>Balde pop grande</h3>
-             <p>$1600</p>
-         </div>
 
-         <div class="contenedorCandy">
-             <img class="imgCandy" src="../img/vasopelicula.jpg" alt="vaso pelicula">
-            <h3>Vaso pelicula 32oz</h3>
-             <p> $4000</p>
-         </div>
-         
-     </main>
 
-     <footer>
+    <!-- CAROUSEL -->
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/cinesthi-carousel.jpg" class="d-block w-100" alt="Publicidad de pochoclos">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/mitadprecio-carousel.png" class="d-block w-100" alt="Banner de Patos">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/cinefan-carousel.jpg" class="d-block w-100" alt="Publicidad de CIne fan">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <h1 class="tituloCandy">Elegí el mejor combo para vos</h1>
+
+
+
+    <main class="contenedorCandy">
+
+
+
+        <div class="divCandy">
+            <img class="imgCandy" src="../img/combo-grande.jpg" alt="combo grande">
+            <h3 class="nombreCombo">Combo Grande</h3>
+            <p class="descripcionCombo">Balde de pochoclo + 2 Vaso 24oz </p>
+            <P class="precioCombo">$5000</P>  
+            <button class="botonComprar">COMPRAR</button>
+        </div>
+
+        <div class="divCandy">
+            <img class="imgCandy" src="../img/combo-familia.jpg" alt="Combo Familia">
+            <h3 class="nombreCombo">Combo Familia</h3>
+            <p class="descripcionCombo">Inluye 2 bales de pochoclos + 4 vasos de 24 Oz</p>
+            <p class="precioCombo">$9600</p>
+            <button class="botonComprar">COMPRAR</button>
+        </div>
+
+        <div class="divCandy">
+            <img class="imgCandy" src="../img/combo-mediano-2vasos.jpg" alt="Combo combo-mediano-2vasos">
+            <h3 class="nombreCombo">Combo Mediano</h3>
+            <p class="descripcionCombo">Incluye un pochoclo mediano + 2 vasos 16 Oz + golosina de regalo</p>
+            <p class="precioCombo"> $3200</p>
+            <button class="botonComprar">COMPRAR</button>
+        </div>
+
+        <div class="divCandy">
+            <img class="imgCandy" src="../img/lata.jpg" alt="Lata de personajes">
+            <h3 class="nombreCombo">Latas De Personajes</h3>
+            <p class="descripcionCombo">Inlcuye lata de personajes con pochoclos </p>
+            <p class="precioCombo"> $4100</p>  
+            
+            <button class="botonComprar">COMPRAR</button>
+        </div>
+
+        <div class="divCandy">
+            <img class="imgCandy" src="../img/lata-marvels.jpg" alt="Lata The Marvels +vaso pelicula">
+            <h3 class="nombreCombo">Especial Lata The Marvels y Vaso</h3>
+            <p class="descripcionCombo">Incluye Lata the Marvels + Vaso plástico de 32 Oz</p>
+            <p class="precioCombo">$7500</p>
+            <button class="botonComprar">COMPRAR</button>
+        </div>
+
+        <div class="divCandy">
+            <img class="imgCandy" src="../img/combo-pancho.jpg" alt="vaso pelicula">
+            <h3 class="nombreCombo">Combo Pancho</h3>
+            <p class="descripcionCombo">Incluye pancho + vaso 16 Oz</p>
+            <p class="precioCombo"> $4000</p>
+            <button class="botonComprar">COMPRAR</button>
+        </div>
+
+    </main>
+
+    <footer>
         <h2 class="tituloFoot">Seguinos en nuestras redes</h2>
         <img class="logosRedes" src="../img/facebook.png" alt="Logo de Facebook">
         <img class="logosRedes" src="../img/instagram.png" alt="Logo de Instagram">
@@ -69,9 +156,13 @@
 
 
 
-    
-    
-    
+
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+
 
 </body>
+
 </html>
