@@ -36,6 +36,7 @@ body{
     font-size: 18px;
     list-style-type: none;
     font-weight: bold;
+
 }
 /* HOVER A ETIQUETA A */
 .nav-link:hover{
@@ -329,3 +330,79 @@ footer{
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
+/******** SUCURSALES ********/
+
+
+.ubicacion {
+    padding: 30px;
+    margin: 15px;
+    list-style-type: none;
+    background-color: rgb(145, 145, 145);
+    border: rgb(235, 235, 235);
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+
+.sucursal{
+    
+    color: black;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 50px;
+}
+
+/* HOVER A SUCURSALES */
+
+.sucursal:hover{
+    color: white;
+}
+
+
+.contenedorMapas{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 15px;
+}
+
+.tituloSucursal{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 50px;
+    margin: 50px;
+}
+
+.mapas{
+    width: 500px;
+    height: 500px;
+}
+
+/**** RESPONSIVE PARA CELULAR ****/
+
+@media (max-width: 760px){
+    .tituloSucursal{
+        font-size: 20px;
+        
+    }
+    .sucursal{
+        
+        font-size: 15px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
