@@ -6,40 +6,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinesthi</title>
-    <!-- CSS -->
+    <!-- CSS BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- MI CSS -->
     <link rel="stylesheet" href="css/estilo.css">
 
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg encabezado">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="img/logocinesthi.png" alt="Logo Cinesthi">
 
-    <header>
-        <a href="">
-            <img class="logo" src="img/logocinesthi.png" alt="Logo Cinesthi">
-        </a>
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item navItem">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item navItem">
+                        <a class="nav-link " href="html/sucursales.html">Sucursales</a>
+                    </li>
+                    <li class="nav-item navItem">
+                        <a class="nav-link " href="html/candy.html">Candy</a>
+                    </li>
+                    <li class="nav-item navItem">
+                        <a class="nav-link " href="html/festejatucumple.html">Feseja tu cumple</a>
+                    </li>
+                    <li class="nav-item navItem">
+                        <a class="nav-link " href="html/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="html/sucursales.html">Sucursales</a></li>
-                <li><a href="html/candy.html">Candy</a></li>
-                <li><a href="html/festejatucumple.html">Festeja tu cumple</a></li>
-                <li><a href="html/contacto.html">Contacto</a></li>
+   
 
-            </ul>
-        </nav>
+    <!-- PELÍCULAS -->
+
+    <!-- CAROUSEL -->
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/marvel-carousel.jpeg" class="d-block w-100" alt="banner The Marvels">
+            </div>
+            <div class="carousel-item">
+                <img src="img/patos-carousel.jpg" class="d-block w-100" alt="Banner de Patos">
+            </div>
+            <div class="carousel-item">
+                <img src="img/muchachos-carousel.jpg" class="d-block w-100" alt="Banner de Muchachos">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
 
-    </header>
 
+    
 
+    <h1 class="estrenos">Estrenos</h1>
 
     <main class="contenedorPosters">
-
-        <!-- <h1 class="cinePelicula">Cine de película</h1> -->
-
-
-        <h2 class="estrenos">Estrenos</h2>
 
         <div class="divPosters">
             <img class="imgPoster" src="img/eljusticiero.jpg.jpg" alt="Poster de el Justiciero 3">
@@ -156,21 +209,21 @@
             <button class="horarioBtn">22:30</button>
         </div>
 
-
-
-
-
     </main>
 
+
     <footer>
-        <h2>Seguinos en nuestras redes</h2>
-        <p>Instagram: Cinesthi</p>
-        <p>Tiktok: Cinesthi</p>
-        <p>Facebook: Cinesthi</p>
+        <h2 class="tituloFoot">Seguinos en nuestras redes</h2>
+        <img class="logosRedes" src="img/facebook.png" alt="Logo de Facebook">
+        <img class="logosRedes" src="img/instagram.png" alt="Logo de Instagram">
+        <img class="logosRedes" src="img/tiktok.png" alt="Logo de Tiktok">
 
     </footer>
 
-
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 </body>
 
