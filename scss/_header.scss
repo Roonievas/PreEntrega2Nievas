@@ -1,0 +1,40 @@
+.encabezado {
+
+
+    img {
+        width: 125px;
+        cursor: pointer;
+    }
+
+    button {
+        background-color: gray;
+
+    }
+
+    li {
+        display: inline-block;
+        padding: 25px 25px;
+        
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color-fuentes;
+            font-size: 18px;
+            list-style: none;
+            font-weight: bold;
+          
+
+            &:hover {
+                color: grey;
+
+               
+            }
+
+            i{
+                font-size: 30px;
+            }
+
+        }
+
+    }
+}

@@ -1,437 +1,307 @@
-*{margin: 0;
-padding: 0;}
-
-/**************    HOME    ***************/
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
-
-
-body{
-
-    font-family: 'Roboto', sans-serif;     
-    background-color: rgb(0, 1, 3);
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(0, 1, 3);
 }
 
-   /* HEADER */
-
-.logo{
-       width: 125px;
-       cursor: pointer;
+.encabezado img {
+  width: 125px;
+  cursor: pointer;
+}
+.encabezado button {
+  background-color: gray;
+}
+.encabezado li {
+  display: inline-block;
+  padding: 25px 25px;
+}
+.encabezado li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  list-style: none;
+  font-weight: bold;
+}
+.encabezado li a:hover {
+  color: grey;
+}
+.encabezado li a i {
+  font-size: 30px;
 }
 
-
-
-.navbar-toggler-icon{
-    background-color:gray;
-  
-}
-       
-
-
-.nav-link{
-
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    font-size: 18px;
-    list-style-type: none;
-    font-weight: bold;
-
-}
-/* HOVER A ETIQUETA A */
-.nav-link:hover{
-    color:gray;
+h1 {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  margin: 25px;
 }
 
-  
-.navItem{
-    display: inline-block;
-    padding: 0px 25px;
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+main div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(44, 42, 42);
+  width: auto;
+  height: auto;
+  border: solid rgb(83, 77, 77);
+  border-radius: 25px;
+  margin: 10px;
+  padding: 10px;
+}
+main div img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  cursor: pointer;
+}
+main div p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+main div h3 {
+  color: rgb(163, 163, 163);
+  font-size: 25px;
+  text-align: center;
+  margin: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main div h4 {
+  color: wheat;
+  font-size: 25px;
+  text-align: center;
+}
+main div button {
+  background: linear-gradient(90deg, rgb(4, 4, 4) 0%, rgb(121, 116, 116) 99%, rgb(245, 245, 245) 100%);
+  padding: 10px 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 1s;
+}
+main div button:hover {
+  background: black;
+  color: #fff;
+  height: 60px;
+  width: 120px;
 }
 
-   
+.contenedorCandy {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
-  /*******  HOME: MAIN ********/
+.contenedorForm {
+  display: block;
+}
 
-.contenedorPosters{
+form {
+  width: 400px;
+  padding: 20px;
+  background-color: rgb(44, 42, 42);
+  margin: 0 auto;
+  margin-top: 100px;
+  border: 1px solid rgb(83, 77, 77);
+  border-radius: 10px;
+}
+form .title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+form button {
+  width: 100%;
+  background: linear-gradient(90deg, rgb(4, 4, 4) 0%, rgb(121, 116, 116) 99%, rgb(245, 245, 245) 100%);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 1s;
+}
+form button:hover {
+  background: white;
+}
+form label {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+form button {
+  opacity: 0.8;
+}
+form a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+form a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  margin: 25px;
+  padding-top: 60px;
+}
+
+.divCuenta {
+  display: block;
+  width: 400px;
+  padding: 20px;
+  background-color: rgb(44, 42, 42);
+  margin: 0 auto;
+  margin-top: 100px;
+  border: 1px solid rgb(83, 77, 77);
+  border-radius: 10px;
+}
+.divCuenta button {
+  width: 100%;
+  background: linear-gradient(90deg, rgb(4, 4, 4) 0%, rgb(121, 116, 116) 99%, rgb(245, 245, 245) 100%);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 1s;
+}
+.divCuenta button:hover {
+  background: black;
+}
+
+.mainCumple {
+  display: block;
+  width: 400px;
+  padding: 20px;
+  background-color: rgb(44, 42, 42);
+  margin: 0 auto;
+  margin-top: 100px;
+  border: 1px solid rgb(83, 77, 77);
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+}
+.mainCumple .bannerCumple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainCumple .img-fluid {
+  height: auto;
+  max-width: 100%;
+}
+.mainCumple .tituloCumple {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px;
+  margin: 20px;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .contenedorPosters {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
- 
-}
-
-  
-.nombrePelicula{
-    color:rgb(163, 163, 163);
-    font-size: 25px;
-    text-align: center;
-    margin: 15px;
-    font-weight: bold;
-}
-
-.estrenos {
-      
-    font-size: 50px;
-    text-align: center;
-    color: white;
-    margin: 25px;
-}
-
-.divPosters{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(44, 42, 42);
-    width: auto;
-    height: auto;
-    border: solid rgb(83, 77, 77) ;
-    border-radius: 25px;
-    margin: 10px;
-    padding: 10px;
- 
-    
-    
-}
-
-.imgPoster{
-    width: 100%;
-    height: 500px;
-    object-fit: contain;
-   
-    cursor: pointer;
-
-}
-
-.sinopsisPelicula{
-    color: white;
-    font-size: 20px;
-    text-align: center;
-
-}
- 
-
-
-.caliPelicula{
-    color: rgb(156, 156, 156);
-    font-size: 20px;
-    text-align: center;
-
-}
-.horarioBtn{
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
-}
-/* Hover al boton de horario */
-.horarioBtn:hover{
-    background-color: black;
-    color: #fff;
-}
-
-
-/* FOOTER */
-
-footer{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 50px;
-    margin: 20px;
-    background-color: black;
-}
-
-.tituloFoot{
-    font-size: 25px;
-    text-align: center;
-    font-weight: bold;
-    color: white;
-}
-
-.logosRedes{
-    width: 75px;
-    padding: 10px;
-    cursor: pointer;
-    
-}
-
-/* RESPONSIVE PARA CELULAR */
-
-@media (max-width: 760px){
-   
-    
-    .contenedorPosters{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr)
-        
-    }
-
-    .estrenos{
-        font-size: 30px;
-    }
-
-    .divPosters{
-        width: auto;
-        height: auto;
-        
-    }
-
-    .imgPoster{
-        width: 250px;
-        height: 250px;
-    }
-
-    .sinopsisPelicula{
-       
-        font-size: 15px;
-        text-align: center;
-    
-    }
-     
-    .nombrePelicula{
-        
-        font-size: 20px;
-        text-align: center;
-    }
-    
-    .caliPelicula{
-               
-        font-size: 20px;
-        text-align: center;
-    }
-
-
-    .tituloFoot{
-        font-size: 20px;
-    }
-    .logosRedes{
-        width: 50px;
-    }
-
-}
-
-@media (min-width: 761px) and (max-width:1005px){
-    .contenedorPosters{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .logosRedes{
-        width: 65px;
-    }
-}
-
-
-/*******  CANDY *******/
-
-
-.tituloCandy{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 25px;
-    color: white;
-    font-weight: bold;
-    padding: 60px;
-}
-.contenedorCandy{
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-
-}
-
-.divCandy{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(44, 42, 42);
-    width: auto;
-    height: auto;
-    border: solid rgb(83, 77, 77);
-    border-radius: 25px;
-    margin: 10px;
-    padding: 10px;
-
-    
-
-}
-
-.imgCandy{
-    width: 400px;
-    height: 400px;
-    object-fit: contain;
-    
-}
-
-
-.nombreCombo{
-    font-size: 25px;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    
-}
-
-.descripcionCombo{
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    margin: 10px;
-
-}
-
-.precioCombo{
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    color: wheat;
-    
-}
-
-.botonComprar{
-    padding: 10px 20px;
-    margin-bottom:30px;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.botonComprar:hover{
-    background-color: black;
-    color: #fff;
-
-}
-
-
-/******* RESPONSIVE PARA CELULAR ******/
-
-
-@media (max-width: 760px){
-    .contenedorCandy{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);       
-    }
-
-    .imgCandy{
-        width: 300px;
-        height: 300px;
-        object-fit: contain;
-    }
-    .nombreCombo{
-        font-size: 20px;
-        margin: 10px;
-    }
-}
-
-@media (min-width: 761px) and (max-width:1005px){
-    .contenedorCandy{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-/******** SUCURSALES ********/
-
-
-.ubicacion {
-    padding: 30px;
-    margin: 15px;
-    list-style-type: none;
-    background-color: rgb(145, 145, 145);
-    border: rgb(235, 235, 235);
-    border-radius: 10px;
-    text-align: center;
-
-}
-
-
-.sucursal{
-    
-    color: black;
-    text-transform: uppercase;
-    font-size: 25px;
-    text-decoration: none;
-    padding: 50px;
-    cursor: pointer;
-}
-
-/* HOVER A SUCURSALES */
-
-.sucursal:hover{
-    color: white;
-}
-
-
-.contenedorMapas{
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 15px;
-}
-
-.tituloSucursal{
-    font-size: 25px;
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 50px;
-    margin: 50px;
-}
-
-.mapas{
-    width: 500px;
-    height: 500px;
-}
-
-/**** RESPONSIVE PARA CELULAR ****/
-
-@media (max-width: 760px){
-    .tituloSucursal{
-        font-size: 20px;
-        
-    }
-    .sucursal{
-        
-        font-size: 15px;
-
-    }
-}
-
-
-/******* FESTEJA TU CUMPLE  **********/
-
-.bannerCumple{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   
-}
-
-.img-fluid{
-    height: auto;
-    max-width: 100%;
-}
-
-
-.tituloCumple{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .estrenos {
     font-size: 30px;
-    color: white;
-    text-transform: uppercase;
-    padding: 15px;
-    margin: 20px;
-    text-align: center;
-}
-
-
-.mainCumple{
-    
-    width: 100%;
+  }
+  .divPosters {
+    width: auto;
     height: auto;
-    background-color: grey;
-    color: white;
+  }
+  .imgPoster {
+    width: 250px;
+    height: 250px;
+  }
+  .sinopsisPelicula {
+    font-size: 15px;
+    text-align: center;
+  }
+  .nombrePelicula {
+    font-size: 20px;
+    text-align: center;
+  }
+  .caliPelicula {
+    font-size: 20px;
+    text-align: center;
+  }
+  .tituloFoot {
+    font-size: 20px;
+  }
+  .logosRedes {
+    width: 50px;
+  }
+}
+@media (min-width: 761px) and (max-width: 1005px) {
+  .contenedorPosters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logosRedes {
+    width: 65px;
+  }
+}
+@media (max-width: 760px) {
+  .contenedorCandy {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .imgCandy {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+  }
+  .nombreCombo {
+    font-size: 20px;
+    margin: 10px;
+  }
+}
+@media (min-width: 761px) and (max-width: 1005px) {
+  .contenedorCandy {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+  margin: 20px;
+  background-color: black;
+}
+footer h2 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+footer img {
+  width: 75px;
+  padding: 10px;
+  cursor: pointer;
 }
 
-
-
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,27 @@
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    margin: 20px;
+    background-color: black;
+
+    h2{
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+    
+    img{
+        width: 75px;
+        padding: 10px;
+        cursor: pointer;
+        
+    }
+
+
+
+
+}
+

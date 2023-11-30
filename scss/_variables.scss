@@ -1,0 +1,31 @@
+$color-fuentes: white;
+$color-precios: wheat;
+$color-fondo: black;
+$color-cajas:  rgb(44, 42, 42);
+$color-bordescaja: rgb(83, 77, 77);
+
+@mixin titulos{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin: 25px;
+}
+
+@mixin hoverbtn{
+    background: black;
+    color: #fff;
+    height: 60px;
+    width: 120px;
+}
+
+@mixin btnformulario{
+        width: 100%;
+        background: linear-gradient(90deg, rgba(4, 4, 4, 1) 0%, rgba(121, 116, 116, 1) 99%, rgba(245, 245, 245, 1) 100%);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: all 1s;
+}

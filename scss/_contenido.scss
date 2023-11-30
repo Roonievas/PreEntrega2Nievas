@@ -1,0 +1,214 @@
+///////// MAIN 
+
+h1 {
+    @include titulos;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $color-cajas;
+        width: auto;
+        height: auto;
+        border: solid $color-bordescaja;
+        border-radius: 25px;
+        margin: 10px;
+        padding: 10px;
+
+        img {
+            width: 100%;
+            height: 500px;
+            object-fit: contain;
+            cursor: pointer;
+        }
+
+        p {
+            color: $color-fuentes;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            color: rgb(163, 163, 163);
+            font-size: 25px;
+            text-align: center;
+            margin: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        h4 {
+            color: $color-precios;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        button {
+            background: linear-gradient(90deg, rgba(4, 4, 4, 1) 0%, rgba(121, 116, 116, 1) 99%, rgba(245, 245, 245, 1) 100%);
+            padding: 10px 20px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 1s;
+
+            &:hover {
+                @include hoverbtn;
+
+
+            }
+
+        }
+    }
+
+}
+
+//////// CANDY
+
+.contenedorCandy {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/////////// CONTACTO
+
+/////// Estilo al formulario de login
+.contenedorForm {
+    display: block;
+
+}
+
+form {
+    width: 400px;
+    padding: 20px;
+    background-color: $color-cajas;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid $color-bordescaja;
+    border-radius: 10px;
+
+
+    .title {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+    button {
+        @include btnformulario;
+
+        &:hover {
+            background: $color-fuentes;
+        }
+    }
+
+    label {
+        color: $color-fuentes;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+
+    button {
+        opacity: 0.8;
+    }
+
+    a {
+        text-align: center;
+        color: $color-fuentes;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+h2 {
+    @include titulos;
+    padding-top: 60px;
+ 
+ }
+.divCuenta {
+    display: block;
+    width: 400px;
+    padding: 20px;
+    background-color: $color-cajas;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid $color-bordescaja;
+    border-radius: 10px;
+
+    
+
+    button {
+        @include btnformulario;
+
+        &:hover {
+            background: black;
+        }
+    }
+
+
+}
+
+////// FESTEJA TU CUMPLE
+///// ESTILO 
+
+
+ 
+ .mainCumple{
+   
+     display: block;
+     width: 400px;
+     padding: 20px;
+     background-color: $color-cajas;
+     margin: 0 auto;
+     margin-top: 100px;
+     border: 1px solid $color-bordescaja;
+     border-radius: 10px;
+     font-size: 15px ;
+     color: white;
+
+     .bannerCumple{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+     }
+     
+     .img-fluid{
+         height: auto;
+         max-width: 100%;
+     }
+     
+     
+     .tituloCumple{
+         font-size: 30px;
+         color: white;
+         text-transform: uppercase;
+         padding: 15px;
+         margin: 20px;
+         text-align: center;
+     }
+     
+ }

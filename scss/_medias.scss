@@ -1,0 +1,94 @@
+// MEDIAS QUERIES PARA HOME
+
+
+@media (max-width: 760px){
+   
+    
+    .contenedorPosters{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+        
+    }
+
+    .estrenos{
+        font-size: 30px;
+    }
+
+    .divPosters{
+        width: auto;
+        height: auto;
+        
+    }
+
+    .imgPoster{
+        width: 250px;
+        height: 250px;
+    }
+
+    .sinopsisPelicula{
+       
+        font-size: 15px;
+        text-align: center;
+    
+    }
+     
+    .nombrePelicula{
+        
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .caliPelicula{
+               
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    .tituloFoot{
+        font-size: 20px;
+    }
+    .logosRedes{
+        width: 50px;
+    }
+
+}
+
+
+/////// MEDIAS QUERIES PARA CANDY
+
+@media (min-width: 761px) and (max-width:1005px){
+    .contenedorPosters{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .logosRedes{
+        width: 65px;
+    }
+}
+
+
+
+@media (max-width: 760px){
+    .contenedorCandy{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);       
+    }
+
+    .imgCandy{
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+    }
+    .nombreCombo{
+        font-size: 20px;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 761px) and (max-width:1005px){
+    .contenedorCandy{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
