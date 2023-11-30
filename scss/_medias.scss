@@ -86,9 +86,22 @@
     }
 }
 
-@media (min-width: 761px) and (max-width:1005px){
-    .contenedorCandy{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+
+
+///// MEDIAS QUERIES PARA SUCURSALES
+@media (max-width: 760px){
+    .tituloSucursal{
+        font-size: 30px;
+        
+    }
+    .sucursal{
+        
+        font-size: 15px;
+
+    }
+   
+    a{
+        font-size: 20px;
     }
 }
+
